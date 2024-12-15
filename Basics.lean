@@ -23,7 +23,7 @@ def next_weekday (d : Day) : Day :=
   | saturday  => monday
   | sunday    => monday
 
---To evaluate and display the functions, we require a 'Repr' instance of Day
+--To evaluate and display the functions, we require a Repr instance of Day
 -- type to tell Lean how to display the output.
 
 instance : Repr Day where
@@ -105,7 +105,7 @@ theorem test_orb5 : (f or f or t) = t := by
   simp [myOrb]
 
 -- Defining the same functions using conditional expression.
--- for conditional expressions, we need to show that the '=' operator
+-- for conditional expressions, we need to show that the = operator
 -- is decidable for our custom myBool type. Therefore, we use the inbuilt Bool type for this expression.
 
 
@@ -257,7 +257,7 @@ theorem test_odd2 : odd 4 = false := by
 
 namespace NatPlayground2
 
--- Recursive definition of `plus` function
+-- Recursive definition of plus function
 def plus (n m : Nat) : Nat :=
   match n with
   | 0 => m

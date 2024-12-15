@@ -146,7 +146,7 @@ theorem one_not_even' : ¬ ev 1 := by
 theorem inversion_ex1 (n m o : Nat) : [n, m] = [o, o] → [n] = [m] := by
   intro h
   cases h -- Lean automatically decomposes the list equality
-  rfl -- Reflexivity: [n] = [m]
+  rfl
 
 --Impossible Equality
 theorem inversion_ex2 (n : Nat) : n + 1 = 0 → 2 + 2 = 5 := by

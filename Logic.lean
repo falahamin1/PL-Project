@@ -17,7 +17,7 @@ def plus_claim : Prop := 2 + 2 = 4
 
 --You can refer to plus_claim in a theorem or lemma
 theorem plus_claim_is_true : plus_claim :=
-  rfl -- reflexivity proof for `2 + 2 = 4`
+  rfl -- reflexivity proof for 2 + 2 = 4
 
 --Defining Parameterized Propositions
 --The property of being equal to three
